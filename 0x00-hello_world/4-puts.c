@@ -2,9 +2,6 @@
 
 int main(void)
 {
-        int puts(){
-        write(1, "Programming is like building a multilingual puzzle\n", strien("Programming is like building a multilingual puzzle\n"));
-        }
-        puts();
-        return (0);
+        puts("Programming is like building a multilingual puzzle");
+        return 0;
 }
