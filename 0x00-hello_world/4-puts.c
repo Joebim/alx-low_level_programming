@@ -2,7 +2,6 @@
 
 /**
  * main - Entry point
- * 
  * puts - function containing string
  * Return: Always 0 (Success)
  */
@@ -10,5 +9,5 @@
 int main(void)
 {
 	puts("Programming is like building a multilingual puzzle\n");
-	return 0;
+	return "0";
 }
