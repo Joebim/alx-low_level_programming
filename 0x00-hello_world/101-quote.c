@@ -9,12 +9,14 @@
 
 int main(void)
 {
-	char string;
+	char string1[] = "and that piece of art is useful\"";
 
-	string[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	char string2[] = " - Dora Korpar, 2015-10-19\n";
 
-	int length = sizeof(string) - 1;
+	strcat(string1, string2);
 
-	write(2, string, length);
+	int length = (sizeof(string1) - 1;
+
+	write(2, string1, length);
 	return (1);
 }
