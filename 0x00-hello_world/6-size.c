@@ -14,7 +14,7 @@ int main(void)
         int i;
         long int li;
         long long int lli;
-        float d;
+        float f;
 
         printf("Sice of a char: %c\n",(char)sizeOf(c));
 	printf("Size of an int: %i\n",(int)sizeOf(i));
