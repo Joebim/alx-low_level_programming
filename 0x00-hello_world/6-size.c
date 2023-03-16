@@ -16,11 +16,11 @@ int main(void)
         long long int lli;
         float f;
 
-        printf("Sice of a char: %c\n",(char)sizeOf(c));
-	printf("Size of an int: %i\n",(int)sizeOf(i));
-        printf("Size of a long int: %li\n",(long int)sizeOf(li));
-        printf("Size of a long long int: %lli\n",(long long int)sizeOf(lli));
-        printf("Size of a float: %f\n",(float)sizeOf(f));
+        printf("Sice of a char: %c\n",(char)sizeof(c));
+	printf("Size of an int: %i\n",(int)sizeof(i));
+        printf("Size of a long int: %li\n",(long int)sizeof(li));
+        printf("Size of a long long int: %lli\n",(long long int)sizeof(lli));
+        printf("Size of a float: %f\n",(float)sizeof(f))
 
         return (0);
 }
