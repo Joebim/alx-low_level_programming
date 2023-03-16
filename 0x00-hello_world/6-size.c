@@ -23,3 +23,4 @@ int main(void)
         printf("Size of a float: %f\n",(float)sizeOf(f));
 
         return (0);
+}
