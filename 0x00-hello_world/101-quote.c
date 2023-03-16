@@ -16,7 +16,7 @@ int main(void)
 
 	strcat(string1, string2);
 
-	int length = (sizeof(string1) - 1);
+	int length = sizeof(string1) - 1;
 
 	write(2, string1, length);
 	return (1);
