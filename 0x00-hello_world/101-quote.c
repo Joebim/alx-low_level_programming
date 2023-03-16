@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	char string[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n"
+	char string[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 	int length = sizeof(string) - 1;
 
 	write(2, string, length);
