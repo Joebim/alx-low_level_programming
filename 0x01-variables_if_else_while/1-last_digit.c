@@ -22,7 +22,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	int ln = last_n(n)
+	int ln = last_n(n);
 
 	if (n > 5)
 	{
