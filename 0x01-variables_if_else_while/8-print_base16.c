@@ -14,7 +14,7 @@ int main(void)
 		putchar(hex_num + '0');
 	}
 
-	for (hex_let = 0; hex_let <= 6; hex_let++)
+	for (hex_let = 0; hex_let < 6; hex_let++)
 	{
 		putchar(hex_let + 'a');
 	}
