@@ -9,7 +9,7 @@ int main(void)
 {
 	char *letters = "abcdefghijklmnopqrstuvwxyz\n"; /*Declare variable letters*/
 	
-	int i;
+	int i = 0; /* Initialize i to zero */
 
 	for(; letters[i] != '\0'; i++) /*Loop between letters*/
 	{
