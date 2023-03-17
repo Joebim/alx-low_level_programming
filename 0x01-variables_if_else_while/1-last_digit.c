@@ -17,7 +17,8 @@ int last_n(int number)
 
 int main(void)
 {
-	int n, ln;
+	int n;
+	int ln;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
