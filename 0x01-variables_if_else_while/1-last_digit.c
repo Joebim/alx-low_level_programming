@@ -3,27 +3,31 @@
 #include <stdio.h>
 
 /**
- * Function - Initiallize last_n to get last character
- * Parameter - Declare variable reminder to store last value
- * Return reminder
- * Main - Main head function
- * Declare variable n & ln
- * If else condition
- * Return: return 0 if code success
+ * last_n - Get the last digit of a number.
+ *
+ * @number: The number to get the last digit of.
+ *
+ * Return: The last digit of the number.
  */
 
 int last_n(int number)
 {
-	int reminder;
+	int reminder; /* Declare variable reminder to store last value */
 
-	reminder = number % 10;
+	reminder = number % 10; /* Get last digit of number */
 	return (reminder);
 }
 
+/**
+ * main - Entry point of the program.
+ *
+ * Return: Always 0 (success).
+ */
+
 int main(void)
 {
-	int n;
-	int ln;
+	int n; /* Declare variable n */
+	int ln; /* Declare variable ln */
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
