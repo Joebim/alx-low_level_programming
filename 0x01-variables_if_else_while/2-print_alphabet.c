@@ -7,9 +7,9 @@
 
 int main(void)
 {
-	char letters[] = "abcdefghijklmnopqrstuvwxyz\n"; /*Declare variable letters*/
+	char *letters = "abcdefghijklmnopqrstuvwxyz\n"; /*Declare variable letters*/
 	
-	for(int i; letters[i] != "\0"; i++) /*Loop between letters*/
+	for(int i; letters[i] != '\0'; i++) /*Loop between letters*/
 	{
 		putchar(letters[i]); /*Print string to standard output*/
 	}
