@@ -6,7 +6,7 @@
  * main - Main head function initialize
  * int - intialize variable
  * if else condition
- * return: return 0 after success
+ * Return: Always 0 after success
  */
 
 int main(void)
