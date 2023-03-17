@@ -5,7 +5,7 @@
  * Return: Always 0 (success)
  */
 
-in main(void)
+int main(void)
 {
 	char num;
 
