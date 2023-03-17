@@ -14,12 +14,12 @@ int main(void)
 
 	int l = 0;
 
+	int u = 0;
+
 	for (; letters_l[l] != '\0'; l++) /*Loop through letters a to z*/
 	{
 		putchar(letters_l[l]); /*print letters to standard output*/
 	}
-
-	int u = 0;
 
 	for (; letters_u[u] != '\0'; u++) /*Loop through letters A to Z*/
 	{
