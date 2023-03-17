@@ -8,16 +8,24 @@
 
 int main(void)
 {
-	char letters;
+	char *letters_l = "abcdefghijklmnopqrstuvwxyz";
 
-	for (letters = a; letters <= z; letters++) /*Loop through letters a to z*/
+	char *letters_u = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+	int l = 0;
+
+	for (; letters_l[l] != '\0'; l++) /*Loop through letters a to z*/
 	{
-		putchar(letters); /*print letters to standard output*/
+		putchar(letters_l[l]); /*print letters to standard output*/
 	}
 
-	for (letters = A; letters <= Z; letters++) /*Loop through letters A to Z*/
+	int u = 0;
+
+	for (; letters_u[u] != '\0'; u++) /*Loop through letters A to Z*/
 	{
-		putchar(letters); /*print letters to standard output*/
+		putchar(letters_u[u]); /*print letters to standard output*/
 	}
+
+	putchar('\n'); /* Print a newline character */
 	return (0);
 }
