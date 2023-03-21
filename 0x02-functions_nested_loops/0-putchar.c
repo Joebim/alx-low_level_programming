@@ -6,9 +6,9 @@
  * Return: Always 0 (success)
  */
 
-int main(void)
+int main()
 {
-	char *string = "_putchar";
-	printString(string);
+	char str[] = "_putchar";
+	printString(str);
 	return (0);
 }

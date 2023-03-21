@@ -1,10 +1,11 @@
-void printString(char string)
+void printString(char str)
 {
 	int i;
 
-	for (i = 0; string[1] != '\0'; i++)
+	while (str[i] != '\0')
 	{
-	putchar(string[]);
-        putchar('\n');
+	putchar(str[i]);
+	i++;
 	}
+	putchar('\n');
 }
