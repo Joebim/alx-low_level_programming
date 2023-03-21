@@ -2,7 +2,7 @@
 #define MYHEADER_H
 #include <stdio.h>
 
-void printString(char str)
+void printString(char* str)
 {
 	int i = 0;
 
