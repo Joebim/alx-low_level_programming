@@ -11,5 +11,5 @@ void printString(char* str)
 	}
 	putchar('\n');
 }
-
+int _putchar(char n)
 void print_alphabet(void);

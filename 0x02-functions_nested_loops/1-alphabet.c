@@ -2,12 +2,12 @@
 
 void print_alphabet(void)
 {
-        char n = 'a';
+	char n = 'a';
 
-        while(n <= 'z')
-        {
-                putchar(n);
-                n++;
-        }
-        putchar('\n');
+	while(n <= 'z')
+	{
+		_putchar(n);
+		n++;
+	}
+	_putchar('\n');
 }
