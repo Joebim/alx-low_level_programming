@@ -11,3 +11,5 @@ void printString(char* str)
 	}
 	putchar('\n');
 }
+
+void print_alphabet(void);
