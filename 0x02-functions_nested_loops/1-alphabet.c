@@ -1,4 +1,5 @@
-#include "mainone.h"
+#define MAINONE_H "mainone.h"
+#include MAINONE_H
 
 void print_alphabet(void);
 
