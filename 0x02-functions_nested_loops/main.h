@@ -1,5 +1,3 @@
-#ifndef MYHEADER_H
-#define MYHEADER_H
 #include <stdio.h>
 
 void printString(char* str)
@@ -13,5 +11,3 @@ void printString(char* str)
 	}
 	putchar('\n');
 }
-
-#endif /* MYHEADER_H */
