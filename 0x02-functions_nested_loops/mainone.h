@@ -1,5 +1,5 @@
-#ifndef MAIN-1_H
-#define MAIN-1_H
+#ifndef MAINONE_H
+#define MAINONE_H
 #include <stdio.h>
 
 void print_alphabet(void)
@@ -14,4 +14,4 @@ void print_alphabet(void)
 	putchar('\n');
 }
 
-#endif /* MAIN-1_H */
+#endif /* MAINONE_H */

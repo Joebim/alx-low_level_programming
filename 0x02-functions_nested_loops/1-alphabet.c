@@ -1,4 +1,4 @@
-#include "main-1.h"
+#include "mainone.h"
 
 /**
  * main - Entry point of the project
