@@ -11,7 +11,7 @@ void print_alphabet(void)
 		putchar(n + '0');
 		n++;
 	}
-	putchar('\n')
+	putchar('\n');
 }
 
 #endif /* MYHEADER_H */
