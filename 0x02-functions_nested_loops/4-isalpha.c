@@ -2,7 +2,7 @@
 
 /**
  * _isalpha - check for alphabets
- * @c - The character to be checked
+ * @c: The character to be checked
  * Return: 1 if is sn alphabet, 0 otherwise
  */
 int _isalpha(int c)
