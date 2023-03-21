@@ -8,6 +8,7 @@
 
 int main(void)
 {
-	printf("_putchar\n")
+	int string = "this is a header function"
+	printString(string);
 	return (0);
 }
