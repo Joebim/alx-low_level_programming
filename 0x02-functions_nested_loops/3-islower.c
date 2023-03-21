@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	if(_islower("c" + '0'))
+	if(_islower("c"))
 	{
 		return (1);
 	} else {
