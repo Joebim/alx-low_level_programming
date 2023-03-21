@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int string = "this is a header function";
+	char string = "this is a header function";
 	printString(string);
 	return (0);
 }
