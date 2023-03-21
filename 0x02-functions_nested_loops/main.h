@@ -1,5 +1,10 @@
 void printString(char string)
 {
-	putchar(string + '0');
-	putchar('\n');
+	int i;
+
+	for (i = 0; string[1] != '0'; i++)
+	{
+	putchar(string[]);
+        putchar('\n');
+	}
 }

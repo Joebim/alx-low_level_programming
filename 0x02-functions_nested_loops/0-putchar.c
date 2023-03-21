@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	char *string = "this is a header function";
+	char *string = "_putchar";
 	printString(string);
 	return (0);
 }
