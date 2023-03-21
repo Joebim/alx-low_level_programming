@@ -4,9 +4,9 @@
 
 void print_alphabet(void)
 {
-	int n = a;
+	int n = "a";
 
-	while(n <= z)
+	while(n <= "z")
 	{
 		putchar(n + '0');
 		n++;
