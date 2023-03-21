@@ -1,7 +1,4 @@
-#define MAINONE_H "mainone.h"
-#include MAINONE_H
-
-void print_alphabet(void);
+#include "mainone.h"
 
 /**
  * main - Entry point of the project
