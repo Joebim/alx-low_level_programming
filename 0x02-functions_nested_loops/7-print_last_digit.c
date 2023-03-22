@@ -22,13 +22,13 @@ int print_last_digit(int n)
 		n %= 10;
 	}
 
+	last_digit = n % 10; /* get the absolute value and modulo 10 */
+
 	/* handle special case for INT_MIN */
 	if (n == 0 && last_digit != 0)
 	{
 		n = INT_MAX % 10 + 1;
 	}
-
-	last_digit = n % 10; /* get the absolute value and modulo 10 */
 
 	_putchar(last_digit + '0'); /* convert to ASCII code */
 	return last_digit;
