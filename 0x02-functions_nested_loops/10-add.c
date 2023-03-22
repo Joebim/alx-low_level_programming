@@ -8,7 +8,7 @@ int add(int a, int b)
 {
 	/* Check if both numbers are negative */
     if (a < 0 && b < 0) {
-        return -add_two_numbers(abs(a), _abs(b));
+        return _(abs(a) + _abs(b));
     }
 
     /* Check if only one number is negative */
