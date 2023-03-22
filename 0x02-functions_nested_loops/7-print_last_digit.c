@@ -14,7 +14,7 @@ int print_last_digit(int n)
 		n = -n;
 	}
 
-	int last_digit = n % 10; /* get the absolute value and modulo 10 */
+	last_digit = n % 10; /* get the absolute value and modulo 10 */
 
 	int num = last_digit + '0'; /* convert to ASCII code */
 
