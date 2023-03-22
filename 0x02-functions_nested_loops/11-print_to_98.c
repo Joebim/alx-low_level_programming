@@ -1,18 +1,21 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  *
  */
 
 void print_to_98(int n) {
+    int i;
+
     if (n <= 98) {
-        for (; n < 98; n++) {
-            std::cout << n << ", ";
+        for (i = n; i < 98; i++) {
+            putchar(i);
         }
     } else {
-        for (; n > 98; n--) {
-            std::cout << n << ", ";
+        for (i = n; i > 98; i--) {
+            putchar(i);
         }
     }
-    std::cout << "98\n";
+
+    putchar(98);
 }
