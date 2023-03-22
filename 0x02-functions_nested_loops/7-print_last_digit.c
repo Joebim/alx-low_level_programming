@@ -10,30 +10,28 @@
 int print_last_digit(int n)
 {
     int last_digit;
-    char c;
 
-    if (n < 0)
+    /* handle special case for INT_MIN */
+    if (n == INT_MIN)
     {
-        if (n == INT_MIN)
-        {
-            c = '0' - (n % 10);
-            n /= 10;
-        }
-        else
-        {
-            n = -n;
-            c = '-';
-        }
+        last_digit = 8;
     }
     else
     {
-        c = ' ';
+        if (n < 0)
+        {
+            n = -n;
+        }
+
+        last_digit = n % 10; /* get the absolute value and modulo 10 */
+
+        /* handle letters and convert to ASCII code */
+        if (n < 0 || n > 9)
+        {
+            n %= 10;
+        }
     }
 
-    last_digit = n % 10; /* get the last digit */
-
-    c = last_digit + '0'; /* convert to ASCII code */
-
-    _putchar(c); /* print the character */
+    _putchar(last_digit + '0'); /* convert to ASCII code */
     return last_digit;
 }
