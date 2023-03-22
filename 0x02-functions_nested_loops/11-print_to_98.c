@@ -33,4 +33,8 @@ void print_to_98(int n)
 			_putchar(' ');
 		}
 	}
+	if (n == 98)
+	{
+		_putchar(n + '0')
+	}
 }
