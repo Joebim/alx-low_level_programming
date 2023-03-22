@@ -6,10 +6,18 @@
 
 int add(int a, int b)
 {
-	int add;
+	/* Check if both numbers are negative */
+    if (a < 0 && b < 0) {
+        return -add_two_numbers(abs(a), _abs(b));
+    }
 
-	add = a + b;
+    /* Check if only one number is negative */
+    if (a < 0) {
+        return b - _abs(a);
+    } else if (b < 0) {
+        return a - _abs(b);
+    }
 
-	_putchar(add + '0');
-	return (0);
+    /* If both numbers are positive, just add them together */
+    return a + b;
 }
