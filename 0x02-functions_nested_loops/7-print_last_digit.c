@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * print_last_digit - print last digit
- * Return: n as last dight
+ * print_last_digit - prints the last digit of a number
+ * @n: the number to extract the last digit from
+ * Return: 0 (dummy value)
  */
 
 int print_last_digit(int n)
@@ -13,6 +14,12 @@ int print_last_digit(int n)
 	{
 		n = -n;
 	}
+
+	/* handle letters and convert to ASCII code */
+        if (n < 0 || n > 9)
+        {
+                n %= 10;
+        }
 
 	last_digit = n % 10; /* get the absolute value and modulo 10 */
 
