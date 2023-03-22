@@ -4,12 +4,15 @@
  *
  */
 
-void print_to_98(int n)
-{
-	 for (; n != 98; n < 98 ? n++ : n--) {
-        _putchar(n);
-        _putchar(',');
-        _putchar(' ');
+void print_to_98(int n) {
+    if (n <= 98) {
+        for (int i = n; i < 98; i++) {
+            std::cout << i << ", ";
+        }
+    } else {
+        for (int i = n; i > 98; i--) {
+            std::cout << i << ", ";
+        }
     }
-    _putchar(98);
+    std::cout << "98\n";
 }
