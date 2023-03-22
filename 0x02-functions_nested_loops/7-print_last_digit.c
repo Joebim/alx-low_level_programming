@@ -5,8 +5,9 @@
  * Return: n as last dight
  */
 
-int print_last_digit(int)
+int print_last_digit(int num)
 {
-	int n %= 10 /*Set n to modulos of 10 to get last digit*/
-	return (n);
+	int last_digit = abs(num) % 10; /* get the absolute value and modulo 10 */
+	int n = last_digit + '0'; /* convert to ASCII code */
+	return n;
 }
