@@ -22,8 +22,11 @@ void times_table(void)
 					_putchar(' ');
 					_putchar(' ');
 				}
+				_putchar(' ');
 				_putchar(ops + '0');
-			} else {
+			}
+			else
+			{
 				if (rows > 0)
 				{
 					_putchar('0');
