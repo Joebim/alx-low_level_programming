@@ -16,5 +16,5 @@ int print_last_digit(int n)
 
 	last_digit = n % 10; /* get the absolute value and modulo 10 */
 
-	putchar(last_digit + '0'); /* convert to ASCII code */
+	_putchar(last_digit + '0'); /* convert to ASCII code */
 }
