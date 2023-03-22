@@ -40,7 +40,7 @@ void print_number(int n)
  * @n: the number to start from
  *
  * Prints all natural numbers from @n to 98, separated by a comma and a space.
- * The numbers are printed in ascending order if @n is less than or equal to 98,
+ * The numbers are printed in ascending if @n is less than or equal to 98,
  * and in descending order if @n is greater than 98.
  */
 void print_to_98(int n)
