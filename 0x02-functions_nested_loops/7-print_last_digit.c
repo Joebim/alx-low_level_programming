@@ -9,30 +9,31 @@
 
 int print_last_digit(int n)
 {
-	int last_digit;
+    int last_digit;
+    char c;
 
-	if (n < 0)
-	{
-		n = -n;
-	}
+    if (n < 0)
+    {
+        if (n == INT_MIN)
+        {
+            c = '0' - (n % 10);
+            n /= 10;
+        }
+        else
+        {
+            n = -n;
+            c = '-';
+        }
+    }
+    else
+    {
+        c = ' ';
+    }
 
-	/* handle letters and convert to ASCII code */
-	if (n < 0 || n > 9)
-	{
-		n %= 10;
-	}
+    last_digit = n % 10; /* get the last digit */
 
-	last_digit = n % 10; /* get the absolute value and modulo 10 */
+    c = last_digit + '0'; /* convert to ASCII code */
 
-	/* handle special case for INT_MIN */
-	if (n == 0 && last_digit != 0)
-	{
-		last_digit = INT_MAX % 10;
-	} else
-	{
-		last_digit = n % 10; /* get the absolute value and modulo 10 */
-	}
-
-	_putchar(last_digit + '0'); /* convert to ASCII code */
-	return last_digit;
+    _putchar(c); /* print the character */
+    return last_digit;
 }
