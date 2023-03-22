@@ -18,12 +18,13 @@ void print_number(int n) {
 }
 
 void print_to_98(int n) {
+	int i;
     if (n <= 98) {
-        for (int i = n; i < 98; i++) {
+        for (i = n; i < 98; i++) {
             print_number(i);
         }
     } else {
-        for (int i = n; i > 98; i--) {
+        for (i = n; i > 98; i--) {
             print_number(i);
         }
     }
