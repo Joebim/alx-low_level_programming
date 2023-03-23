@@ -4,6 +4,7 @@
 
 /**
  * _isdigit - Check for numbers
+ * @c: parameter to be checked
  * Return: 1 when its a number 0 otherwise
  */
 
