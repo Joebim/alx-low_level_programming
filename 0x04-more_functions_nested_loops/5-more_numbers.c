@@ -11,8 +11,7 @@ void more_numbers(void)
 
 	for (times = 0; times <= 10; times++) /*loop of ten numbers*/
 	{
-		n = 0;
-		for (; n <= 14; n++) /*loop number from one to fourteen*/
+		for (n = 0; n <= 14; n++) /*loop number from one to fourteen*/
 		{
 			putchar(n);
 		}
