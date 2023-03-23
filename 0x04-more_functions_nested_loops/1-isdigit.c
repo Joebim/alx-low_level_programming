@@ -1,12 +1,15 @@
 #include "main.h"
+#include <stdio.h>
+#include <ctype.h>
 
 /**
- *
+ * _isdigit - Check for numbers
+ * Return: 1 when its a number 0 otherwise
  */
 
 int _isdigit(int c)
-i{
-	if (c <= 9 && (c >= 0))
+{
+	if (isdigit(c))
 	{
 		return (1);
 	} else
