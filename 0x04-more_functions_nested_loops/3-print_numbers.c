@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_numbers - print numbers from 0 to 9
@@ -12,7 +13,7 @@ void print_numbers(void)
 
 	while (num <= 9) /*loop to print numbers*/
 	{
-		_putchar(num);
+		putchar(num);
 		num++;
 	}
 }
