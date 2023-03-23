@@ -6,17 +6,15 @@
  * @n: Inputed parameter
  */
 
-void print_line(int n)
-{
-	if (n <= 0)
-	{
+void print_line(int n) {
+	if (n <= 0) {
 		putchar('\n');
+		return;  // exit the function if n is less than or equal to 0
 	}
-	
+
 	int num;
 
-	for (num = 0; num < n; num++)
-	{
+	for (num = 0; num < n; num++) {
 		putchar('_');
 	}
 	putchar('\n');
