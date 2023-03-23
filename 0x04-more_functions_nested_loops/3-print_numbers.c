@@ -6,7 +6,7 @@
 
 void print_numbers(void)
 {
-	int num; /*Initialize number variable*/
+	char num; /*Initialize number variable*/
 
 	num = 0;
 
