@@ -17,7 +17,7 @@ void more_numbers(void)
 			{
 				putchar(n / 10 + '0');
 			}
-			putchar(times % 10 + '0');
+			putchar(n % 10 + '0');
 		}
 	}
 	putchar('\n');
