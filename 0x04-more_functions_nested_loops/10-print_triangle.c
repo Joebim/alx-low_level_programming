@@ -11,19 +11,21 @@
 
 void print_triangle(int size)
 {
-	/* Check if size is less than or equal to 0 */
+	int a, b, c;
+
 	if (size <= 0)
 	{
 		_putchar('\n');
 	}
 	else
 	{
-		int i, j;
-		/* Iterate through each row of the triangle */
-		for (i = 1; i <= size; i++)
+		for (a = 0; a < size; a++)
 		{
-			/* Print the appropriate number of # characters for the current row */
-			for (j = 1; j <= i; j++)
+			for (b = size - a; b > 1; b--)
+			{
+				_putchar(' ');
+			}
+			for (c = 0; c <= b; c++)
 			{
 				_putchar('#');
 			}
