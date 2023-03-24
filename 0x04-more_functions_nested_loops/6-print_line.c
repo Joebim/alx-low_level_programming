@@ -1,11 +1,9 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * print_line - print "_" to inputed times
- * @n: Inputed parameter
+ * print_line - print a straight line
+ * @n: input value
+ * Return: void
  */
-
 void print_line(int n)
 {
 	if (n > 0)
@@ -14,8 +12,8 @@ void print_line(int n)
 
 		for (i = 0; i < n; i++)
 			_putchar('_');
-		putchar('\n');
+		_putchar('\n');
 	}
 	else
-		putchar('\n');	
+		_putchar('\n');
 }
