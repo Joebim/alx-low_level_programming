@@ -1,4 +1,5 @@
-#include <unistd.h>
+#include <stdio.h>
+#include "main.h"
 
 /**
  * main - Entry point
@@ -16,42 +17,25 @@ int main(void)
     {
         if (i % 3 == 0 && i % 5 == 0)
         {
-            _putchar('F');
-            _putchar('i');
-            _putchar('z');
-            _putchar('z');
-            _putchar('B');
-            _putchar('u');
-            _putchar('z');
-            _putchar('z');
-            _putchar(' ');
+            printf("fizzbuzz");
         }
         else if (i % 3 == 0)
         {
-            _putchar('F');
-            _putchar('i');
-            _putchar('z');
-            _putchar('z');
-            _putchar(' ');
+            printf("fizz");
         }
         else if (i % 5 == 0)
         {
-            _putchar('B');
-            _putchar('u');
-            _putchar('z');
-            _putchar('z');
-            _putchar(' ');
+            printf("buzz");
         }
         else
         {
-            int num = i;
-            do {
-                _putchar(num % 10 + '0');
-                num /= 10;
-            } while (num != 0);
-            _putchar(' ');
+            printf("%d", i);
         }
+	if (i != 100)
+	{
+		printf(" ");
+	}
     }
-    _putchar('\n');
+   printf("\n");
     return (0);
 }
