@@ -8,7 +8,7 @@ int main(void)
 {
 	int i;
 
-    for (i = 1; i <= 100; i++) {
+    for (i = 0; i <= 100; i++) {
         if (i % 3 == 0 && i % 5 == 0) {
             // Multiple of both 3 and 5
             _putchar('F');
