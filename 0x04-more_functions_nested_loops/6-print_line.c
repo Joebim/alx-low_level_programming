@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_line - print "_" to inputed times
@@ -13,8 +14,8 @@ void print_line(int n)
 
 		for (i = 0; i < n; i++)
 			_putchar('_');
-		_putchar('\n');
+		putchar('\n');
 	}
 	else
-		_putchar('\n');	
+		putchar('\n');	
 }
