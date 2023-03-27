@@ -10,9 +10,9 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	int length = strlen(src)
+	int length = strlen(src);
 	
-	char *string = src[length + 1]
+	char *string = src[length + 1];
 
 	strcpy(dest, string);
 	return (0);
