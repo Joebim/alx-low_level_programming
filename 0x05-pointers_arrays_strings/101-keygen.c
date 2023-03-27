@@ -9,7 +9,7 @@
  */
 int main(void)
 {
-        int i, len;
+        int i;
         char password[13];
 
         srand(time(0)); /* Seed random number generator with current time */
