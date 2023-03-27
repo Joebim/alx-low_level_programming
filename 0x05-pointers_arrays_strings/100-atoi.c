@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- *
+ * _atoi - convert string to integer
+ * @s: String parameter
  */
 
 int _atoi(char *s)
 {
-	int v = atoi(s);
-	return (v);
+	return (atoi(s));
 }
