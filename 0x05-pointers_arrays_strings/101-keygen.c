@@ -9,30 +9,35 @@
  */
 int main(void)
 {
-    char password[15];
-    int i, sum, diff, rand_ascii;
+	char password(84);
+	int i = 0;
+	int add = 0, h1, h2;
 
-    srand(time(NULL)); /* seed the random number generator */
+	while (add < 2772)
+	{
+		password[i] = 33 + rand() % 94;
+		add += password[i++];
+	}
 
-    /* generate 14 random characters */
-    for (i = 0; i < 14; i++)
-    {
-        /* generate a random ASCII value between 33 and 126 */
-        rand_ascii = rand() % 94 + 33;
-        password[i] = (char)rand_ascii;
-    }
+	password[i] = '\0';
 
-    /* calculate the sum and difference of the ASCII values */
-    sum = password[0];
-    for (i = 1; i < 14; i++)
-        sum += password[i];
-    diff = sum - 2772;
+	if (sum != 2772)
+	{
+		h1 = (add - 2772) / 2;
+		h2 = (add - 2772) / 2;
 
-    /* set the last character to the difference */
-    password[14] = (char)diff;
+		if ((add - 2772) % 2 != 0)
+		h1++;
 
-    /* print the password */
-    printf("%s\n", password);
-
-    return (0);
+		for (i = 0; pasward[i]; i++)
+		{
+			if (password[i] >= (33 + h2))
+			{
+				password[1] -= h2;
+				break;
+			}
+		}
+	}
+	printf("%s", password)
+		return(0);
 }
