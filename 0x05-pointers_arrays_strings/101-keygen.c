@@ -3,39 +3,36 @@
 #include <time.h>
 
 /**
- * main - generates a random password that matches the hash in 101-crackme
+ * main - generates a random valid password for 101-crackme
  *
- * Return: always 0
+ * Return: 0 on success
  */
 int main(void)
 {
     char password[15];
-    int i, sum, diff, rand_num;
+    int i, sum, diff, rand_ascii;
 
-    srand(time(NULL));
+    srand(time(NULL)); /* seed the random number generator */
 
-    /* Generate random password */
-    for (i = 0; i < 12; i++)
+    /* generate 14 random characters */
+    for (i = 0; i < 14; i++)
     {
-        rand_num = rand() % 62;
-        if (rand_num < 26)
-            password[i] = 'a' + rand_num;
-        else if (rand_num < 52)
-            password[i] = 'A' + (rand_num - 26);
-        else
-            password[i] = '0' + (rand_num - 52);
+        /* generate a random ASCII value between 33 and 126 */
+        rand_ascii = rand() % 94 + 33;
+        password[i] = (char)rand_ascii;
     }
 
-    /* Calculate expected hash */
-    sum = password[0] + password[1] + password[2] + password[3] + password[4];
-    diff = password[5] - password[6];
-    printf("Hash: %d\n", sum ^ 0x3b);
-    printf("Expected hash: %d\n", diff);
+    /* calculate the sum and difference of the ASCII values */
+    sum = password[0];
+    for (i = 1; i < 14; i++)
+        sum += password[i];
+    diff = sum - 2772;
 
-    /* Print password */
-    password[12] = '\n';
-    password[13] = '\0';
-    printf("%s", password);
+    /* set the last character to the difference */
+    password[14] = (char)diff;
+
+    /* print the password */
+    printf("%s\n", password);
 
     return (0);
 }
