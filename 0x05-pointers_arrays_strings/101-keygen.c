@@ -12,6 +12,8 @@ int main(void)
         char password[84];
         int i = 0, add = 0, h1, h2;
 
+	srand(time(0));
+
         while (add < 2772)
         {
                 password[i] = 33 + rand() % 94;
@@ -30,10 +32,18 @@ int main(void)
 
                 for (i = 0; password[i]; i++)
                 {
+                        if (password[i] >= (33 + h1))
+                        {
+                                password[1] -= h1;
+                                break;
+                        }
+                }
+
+                for (i = 0; password[i]; i++)
+                {
                         if (password[i] >= (33 + h2))
                         {
-                                password[1] -= h2;
-                                break;
+                                password[1] -= h2;                                 break;
                         }
                 }
         }
