@@ -2,12 +2,12 @@
 #include <string.h>
 
 /**
- * *_strncat - concant strings
+ * *_strcat - concant strings
  * Return: destination
  */
 
-char *_strncat(char *dest, char *src, int n)
+char *_strcat(char *dest, char *src)
 {
-	strncat(dest, src, n);
+	strcat(dest, src);
 	return (dest);
 }
