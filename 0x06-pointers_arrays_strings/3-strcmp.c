@@ -1,15 +1,15 @@
 #include  "main.h"
+#include <string.h>
 
 /**
- * *_strncpy - copy the string pointed to by src to dest
- * @dest: Destination output variable
- * @src: Source string
- * @n: Number of bytes to be use
+ * _strcmp - compare two strings
+ * @s1: first string
+ * @s2: second string
  * Return: Destination
  */
 
-char *_strncpy(char *dest, char *src, int n)
+int _strcmp(char *s1, char *s2)
 {
-	strncpy(dest, src, n);
-	return (dest);
+	strcmp(s1, s2);
+	return (0);
 }
