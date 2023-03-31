@@ -3,6 +3,9 @@
 
 /**
  * *_strncat - concant strings
+ * @dest: Destination output variable
+ * @src: Source string
+ * @n: Numbers of bytes to be used
  * Return: destination
  */
 
