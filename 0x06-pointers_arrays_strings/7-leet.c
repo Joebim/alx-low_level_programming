@@ -9,11 +9,11 @@
 char *leet(char *str)
 {
 	const char *leet_chars = "AEOTL";
-	
+
 	const char *leet_subs = "43071";
-	
+
 	int i, j;
-	
+
 	for (i = 0; str[i]; i++)
 	{
 		for (j = 0; leet_chars[j]; j++)
