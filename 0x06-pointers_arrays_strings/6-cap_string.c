@@ -10,7 +10,9 @@
 char *cap_string(char *str)
 {
 	int i = 0;
-	while (str[i]) {
+
+	while (str[i])
+	{
 		if (i == 0 || isspace(str[i - 1]))
 		{
 			str[i] = toupper(str[i]);
