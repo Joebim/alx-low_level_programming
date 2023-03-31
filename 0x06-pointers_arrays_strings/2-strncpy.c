@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * *_strncpy - copy the string pointed to by src
+ * _strncpy - copy the string pointed to by src
  * @dest: destination
  * @src: Source text string
  * @n: number of bytes to use
