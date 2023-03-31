@@ -3,6 +3,8 @@
 
 /**
  * *_strcat - concant strings
+ * @dest: destination variable
+ * @src: source srting
  * Return: destination
  */
 
