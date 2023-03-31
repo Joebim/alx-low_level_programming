@@ -2,11 +2,11 @@
 
 /**
  * *string_toupper - change string to uppercase
- * @*: String
+ * @str: String
  * Return: String
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
 	int i = 0;
 	
