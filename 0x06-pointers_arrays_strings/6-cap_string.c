@@ -9,11 +9,13 @@
 
 char *cap_string(char *str)
 {
+	const char *separators = " \t\n,;.!?\"(){}";
+
 	int i = 0;
 
 	while (str[i])
 	{
-		if (i == 0 || isspace(str[i - 1]))
+		if (i == 0 || strchr(separators, str[i - 1]))
 		{
 			str[i] = toupper(str[i]);
 		}
