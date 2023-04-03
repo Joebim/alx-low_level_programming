@@ -6,6 +6,7 @@
  * @s: array of characeter
  * @b: address
  * @n: number
+ * Return: return memset function and parameter
  */
 
 char *_memset(char *s, char b, unsigned int n)
