@@ -7,6 +7,9 @@
  *
  * Return: 1 if @n is a prime number, 0 otherwise
  */
+
+int is_prime_helper(int n, int i);
+
 int is_prime_number(int n)
 {
     if (n <= 1)
