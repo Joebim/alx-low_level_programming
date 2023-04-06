@@ -1,10 +1,17 @@
 #include "main.h"
 
 /**
+ * square_root - Recursively finds the square root of a number
+ *
+ * @n: The number to find the square root of
+ * @root: The current root being tested
+ *
+ * Return: The square root of @n, or -1 if @n does not have a natural square root
+ */
+
+/**
  * _sqrt_recursion - returns the natural square root of a number.
- * square_root - get square
  * @n: input number.
- * @root: square root of n.
  *
  * Return: square root of n, or -1 if n does not have a natural square root.
  */
