@@ -2,20 +2,11 @@
 #include <string.h>
 
 /**
- *
+ * _strlen_recursion - get string length
+ * @s: string
  */
 
-void _print_rev_recursion(char *s)
+int _strlen_recursion(char *s);
 {
-	int length;
-
-	length = strlen(s)
-
-	if (length == 0)
-	{
-		return;
-	}
-	_putchar(s[length])
-	
-	_print_rev_recursion(s[length - 1])
+	return (strlen(s));
 }
