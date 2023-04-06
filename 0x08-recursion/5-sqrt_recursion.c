@@ -6,14 +6,7 @@
  * @n: The number to find the square root of
  * @root: The current root being tested
  *
- * Return: The square root of @n, or -1 if @n does not have a natural square root
- */
-
-/**
- * _sqrt_recursion - returns the natural square root of a number.
- * @n: input number.
- *
- * Return: square root of n, or -1 if n does not have a natural square root.
+ * Return: The square root of @n, or -1 if @n does not have a natural sqr rt
  */
 
 int square_root(int n, int root)
@@ -26,6 +19,13 @@ int square_root(int n, int root)
 
 	return (square_root(n, root + 1));
 }
+
+/**
+ * _sqrt_recursion - returns the natural square root of a number.
+ * @n: input number.
+ *
+ * Return: square root of n, or -1 if n does not have a natural square root.
+ */
 
 int _sqrt_recursion(int n)
 {
