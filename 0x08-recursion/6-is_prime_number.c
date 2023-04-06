@@ -4,6 +4,7 @@
  * is_prime_number - Checks if a number is a prime number recursively
  *
  * @n: The number to check
+ * @i: The divisor to try
  *
  * Return: 1 if @n is a prime number, 0 otherwise
  */
@@ -22,13 +23,14 @@ int is_prime_number(int n)
 }
 
 /**
- * is_prime_helper - Helper function that checks if a number is prime recursively
+ * is_prime_helper - Helper func that checks if a num is prime recursively
  *
  * @n: The number to check
  * @i: The divisor to try
  *
  * Return: 1 if @n is a prime number, 0 otherwise
  */
+
 int is_prime_helper(int n, int i)
 {
 	if (i * i > n)
