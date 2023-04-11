@@ -20,6 +20,6 @@ int main(int argc, char *argv[] __attribute__((unused)))
 	num--;
 
 	_putchar(num + '0');
-	_putchar('\n')
+	_putchar('\n');
 	return (0);
 }
