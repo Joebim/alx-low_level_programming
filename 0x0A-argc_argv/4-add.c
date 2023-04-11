@@ -47,7 +47,7 @@ int main(int argc, char *argv[])
 	{
 		for (v = 0; argv[c][v]; v++)
 		{
-			if (!is_num(argv[i][j]))
+			if (!is_num(argv[c][v]))
 			{
 				_putchar('E');
 				_putchar('r');
