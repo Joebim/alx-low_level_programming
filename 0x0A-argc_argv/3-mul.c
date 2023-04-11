@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3) {
 		for (i = 0; "Error\n"[i]; i++)
-			putchar("Error\n"[i]);
+			_putchar("Error\n"[i]);
 		return (1);
 	}
 
@@ -25,22 +25,22 @@ int main(int argc, char *argv[])
 	result = num1 * num2;
 
 	if (result == 0) {
-		putchar('0');
+		_putchar('0');
 	} else {
 		if (result < 0) {
-			putchar('-');
+			_putchar('-');
 			result = -result;
 		}
 
 		for (i = 1000000000; i > 0; i /= 10) {
 			if (result / i != 0 || i == 1)
 			{
-				putchar(result / i + '0');
+				_putchar(result / i + '0');
 			}
 			result = result % i;
 		}
 	}
 
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
