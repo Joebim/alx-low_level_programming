@@ -11,7 +11,7 @@ int main(int argc __attribute__((unused)), char *argv[])
 {
 	int i;
 
-	for(i = 0; argv[0][i]; i++)
+	for (i = 0; argv[0][i]; i++)
 	{
 		_putchar(argv[0][i]);
 	}
