@@ -28,7 +28,8 @@ int main(int argc, char *argv[])
 	if (result == 0)
 	{
 		_putchar('0');
-	} else {
+	} else 
+	{
 		if (result < 0)
 		{
 			_putchar('-');
