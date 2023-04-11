@@ -13,7 +13,7 @@ int main(int argc, char *argv[] __attribute__((unused)))
 
 	num = 0;
 
-	for (i = 0, i < argc; i++;)
+	for (i = 0, i < argc; i++)
 	{
 		num++;
 	}
