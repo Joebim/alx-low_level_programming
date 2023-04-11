@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
 		}
 		sum += atoi(argv[c]);
 	}
-	_putchar(sum + '0');
+	print_number(sum);
 	_putchar('\n');
 	return (0);
 }
