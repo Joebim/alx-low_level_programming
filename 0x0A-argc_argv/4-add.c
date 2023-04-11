@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		sum += atoi(argv[i]);
+		sum += atoi(argv[c]);
 	}
 	_putchar(sum + '0');
 	_putchar('\n');
