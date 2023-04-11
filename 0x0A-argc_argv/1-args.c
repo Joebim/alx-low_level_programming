@@ -9,6 +9,17 @@
 
 int main(int argc, char *argv[] __attribute__((unused)))
 {
-	_putchar(argc - 1 + '0');
+	int num, i;
+
+	num = 0;
+
+	for (i = 0, i < argc; i++;)
+	{
+		num++;
+	}
+	num--;
+
+	_putchar(num + '0');
+	_putchar('\n')
 	return (0);
 }
