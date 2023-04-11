@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -14,8 +15,8 @@ int main(int argc __attribute__((unused)), char *argv[])
 
 	for(i = 0; argv[0][i]; i++)
 	{
-		_putchar(argv[0][i]);
+		putchar(argv[0][i]);
 	}
-	_putchar('\n')
+	putchar('\n')
 	return (0);
 }
