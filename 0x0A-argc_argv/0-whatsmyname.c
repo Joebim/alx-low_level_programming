@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - print programme name
@@ -15,8 +13,8 @@ int main(int argc __attribute__((unused)), char *argv[])
 
 	for(i = 0; argv[0][i]; i++)
 	{
-		putchar(argv[0][i]);
+		_putchar(argv[0][i]);
 	}
-	putchar('\n')
+	_putchar('\n');
 	return (0);
 }
