@@ -4,7 +4,7 @@
 
 /**
  * alloc_grid - returns a pointer to a 2 dimensional array of integers
- * @width: integer for width 
+ * @width: integer for width
  * @height: integer for height
  * Return: NUll if h and w is less than 0, p is Null
  */
