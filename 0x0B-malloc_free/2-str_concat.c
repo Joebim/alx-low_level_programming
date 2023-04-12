@@ -18,7 +18,7 @@ char *str_concat(char *s1, char *s2)
 	l1 = strlen(s1);
 	l2 = strlen(s2);
 
-	p = (char*) malloc(l1 + l2 + 1);
+	p = (char *) malloc(l1 + l2 + 1);
 
 	if (p == NULL)
 	{
@@ -29,5 +29,5 @@ char *str_concat(char *s1, char *s2)
 	memcpy(p + l1, s2, l2);
 	p[l1 + l2] = '\0';
 
-	return(p);
+	return (p);
 }
