@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * create_array - creates an array of chars, and initializes with a specific char
+ * create_array - create array of chars / initializes with a specific char
  * @size: Size of array
  * @c: Characters
  * Return: NULL if size is 0 & Null if code fails
@@ -13,7 +13,7 @@ char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
 
-	char *p; 
+	char *p;
 
 	if (size == 0)
 	{
