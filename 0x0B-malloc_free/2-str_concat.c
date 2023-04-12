@@ -13,7 +13,7 @@ char *str_concat(char *s1, char *s2)
 {
 	char *p;
 
-	int l1, l2;
+	int l1 = 0, l2 = 0;
 
 	if (s1 != NULL)
 		l1 = strlen(s1);
