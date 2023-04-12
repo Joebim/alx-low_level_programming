@@ -10,20 +10,21 @@
 
 char *_strdup(char *str)
 {
-	int length;
-
-	char *p;
+	size_t length;
+	
+	char *str2;
 
 	if (str == NULL)
 		return (NULL);
 
 	length = strlen(str);
 
-	p = malloc(sizeof(char) * (length + 1));
+	str2 = malloc(length + 1);
 
-	if (p == NULL)
+	if (str2 == NULL)
 		return (NULL);
 
-	strcpy(p, str);
-	return (strdup(p));
+	memcpy(str2, str, length + 1);
+
+	return (str2);
 }
