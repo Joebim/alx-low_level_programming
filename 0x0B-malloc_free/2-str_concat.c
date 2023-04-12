@@ -15,8 +15,10 @@ char *str_concat(char *s1, char *s2)
 
 	int l1, l2;
 
-	l1 = strlen(s1);
-	l2 = strlen(s2);
+	if (s1 != NULL)
+		l1 = strlen(s1);
+	if (s2 != NULL)
+		l2 = strlen(s2);
 
 	p = (char *) malloc(l1 + l2 + 1);
 
@@ -25,8 +27,10 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 
-	memcpy(p, s1, l1);
-	memcpy(p + l1, s2, l2);
+	if (s1 != NULL)
+		memcpy(p, s1, l1);
+	if (s2 != NULL)
+		memcpy(p + l1, s2, l2);
 	p[l1 + l2] = '\0';
 
 	return (p);
