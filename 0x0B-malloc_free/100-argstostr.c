@@ -8,44 +8,45 @@
  * @av: argument vector
  *
  * Return: pointer to concatenated string
+ * A
  */
 
 char *argstostr(int ac, char **av)
 {
-        int i, j, k = 0, length = 0;
-        char *p;
+	int i, j, k = 0, length = 0;
+	char *p;
 
-        if (ac == 0 || av == NULL)
-        {
-                return (NULL);
-        }
+	if (ac == 0 || av == NULL)
+	{
+		return (NULL);
+	}
 
-        for (i = 0; i < ac; i++)
-        {
-                for (j = 0; av[i][j]; j++)
-                {
-                        length++;
-                }
-                length++;
-        }
+	for (i = 0; i < ac; i++)
+	{
+		for (j = 0; av[i][j]; j++)
+		{
+			length++;
+		}
+		length++;
+	}
 
-        p = malloc(sizeof(char) * (length + 1));
+	p = malloc(sizeof(char) * (length + 1));
 
-        if (p == NULL)
-        {
-                return (NULL);
-        }
+	if (p == NULL)
+	{
+		return (NULL);
+	}
 
-        for (i = 0; i < ac; i++)
-        {
-                for (j = 0; av[i][j]; j++, k++)
-                {
-                        p[k] = av[i][j];
-                }
-                p[k++] = '\n';
-        }
+	for (i = 0; i < ac; i++)
+	{
+		for (j = 0; av[i][j]; j++, k++)
+		{
+			p[k] = av[i][j];
+		}
+		p[k++] = '\n';
+	}
 
-        p[k] = '\0';
+	p[k] = '\0';
 
-        return (p);
+	return (p);
 }
