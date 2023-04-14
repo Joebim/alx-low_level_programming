@@ -13,29 +13,30 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
         char *p;
 
-        unsigned int l1, l2;
+        unsigned int l1 = 0, l2 = 0;
 
-        if (s1 == NULL)
+        if (s1 != NULL)
         {
-                s1 = "";
+                l1 = strlen(s1);
         }
-        if (s2 == NULL)
+        if (s2 != NULL)
         {
-                s2 = "";
+                l2 = strlen(s2);
         }
 
-        l1 = strlen(s1);
-        l2 = strlen(s2);
         if (n >= l2)
         {
                 n = l2;
         }
+
         p = malloc(sizeof(char) * (1 + n + 1));
 
         if (p == NULL)
         {
                 return (NULL);
         }
+
+        if (s1 != NULL)
         memcpy(p, s1, l1);
         memcpy(p + l1, s2, n);
         p[l1 + n] = '\0';
