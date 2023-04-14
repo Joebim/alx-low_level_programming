@@ -1,18 +1,40 @@
 #include "main.h"
 
 /**
- * malloc_checked - allocates memory using malloc.
- * @b: value for malloc method
+ * string_nconcat - allocates memory using malloc.
+ * @s1: first string
+ * @s2: second string
+ * Return: 
  */
 
-void *malloc_checked(unsigned int b)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int *p;
+	char *p;
 
-	p = malloc(b);
+	size_t l1, l2;
 
-	if (P == NULL)
+	if (s1 == NULL)
 	{
-		return (98);
+		s1 = "";
 	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
+	l1 = strlen(s1);
+	l2 = strlen(s2);
+	if (n >= l2)
+	{
+		n = l2;
+	}
+	p = (char*) malloc(s1 + n + 1);
+
+	if (p = NULL)
+	{
+		return NULL;
+	}
+	memcpy(p, s1, l1);
+	memcpy(p + l1, s2, n);
+	p(l1 + n) = '\0';
+	return (p);
 }
