@@ -6,41 +6,39 @@
  * string_nconcat - allocates memory using malloc.
  * @s1: first string
  * @s2: second string
- * Return:
+ * @n:length of string
+ * Return: NULL if pointer is NULL and address in pointer
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-        char *p;
+	char *p;
 
-        unsigned int l1 = 0, l2 = 0;
+	unsigned int l1 = 0, l2 = 0;
 
-        if (s1 != NULL)
-        {
-                l1 = strlen(s1);
-        }
-        if (s2 != NULL)
-        {
-                l2 = strlen(s2);
-        }
+	if (s1 != NULL)
+	{
+		l1 = strlen(s1);
+	}
+	if (s2 != NULL)
+	{
+		l2 = strlen(s2);
+	}
+	if (n < l2)
+	{
+		l2 = n;
+	}
 
-        if (n < l2)
-        {
-                l2 = n;
-        }
+	p = malloc(sizeof(char) * (l1 + l2 + 1));
 
-        p = malloc(sizeof(char) * (l1 + l2 + 1));
-
-        if (p == NULL)
-        {
-                return (NULL);
-        }
-
-        if (s1 != NULL)
+	if (p == NULL)
+	{
+		return (NULL);
+	}
+	if (s1 != NULL)
 	{
 		memcpy(p, s1, l1);
 	}
-
 	if (s2 != NULL)
 	{
 		if (n > l2)
@@ -49,7 +47,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		}
 		memcpy(p + l1, s2, n);
 	}
-
-        p[l1 + n] = '\0';
-        return (p);
+	p[l1 + n] = '\0';
+	return (p);
 }
