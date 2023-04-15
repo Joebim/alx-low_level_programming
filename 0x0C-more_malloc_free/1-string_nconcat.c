@@ -41,8 +41,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (s2 != NULL)
 	{
-		memcpy(p + l1, s2, l2);
+		memcpy(p, s1, l1);
 	}
+	memcpy(p + li, s2, l2);
 	p[l1 + n] = '\0';
 	return (p);
 }
