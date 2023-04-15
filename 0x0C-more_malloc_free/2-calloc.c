@@ -1,6 +1,6 @@
 #include "main.h"
 
-**
+/**
  * _calloc -  allocate memory for an array, using malloc.
  * @nmemb: Passed number
  * @size: size of value on memory
