@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdlib.h>
+#include <string.h>
+#include <stddef.h>
 
 /**
  * _calloc -  allocate memory for an array, using malloc.
