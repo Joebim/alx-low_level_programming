@@ -29,5 +29,5 @@ int *array_range(int min, int max)
 		p[i] = min;
 	}
 
-        return (p);
+	return (p);
 }
