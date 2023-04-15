@@ -29,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		l2 = n;
 	}
 
-	p = (char *) malloc(l1 + l2 + 1);
+	p = malloc(sizeof(char) * (l1 + l2 + 1));
 
 	if (p == NULL)
 	{
@@ -41,11 +41,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (s2 != NULL)
 	{
-		if (n > l2)
-		{
-			n = l2;
-		}
-		memcpy(p + l1, s2, n);
+		memcpy(p + l1, s2, l2);
 	}
 	p[l1 + n] = '\0';
 	return (p);
