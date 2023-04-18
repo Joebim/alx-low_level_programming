@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
+#include "main.h"
 
 /**
  * struct dog - a dog struct
@@ -13,9 +14,6 @@ typedef struct dog
     float age;
     char *owner;
 } dog_t;
-
-/* function prototype for init_dog */
-void init_dog(struct dog *d, char *name, float age, char *owner);
 
 /**
  * init_dog - Initializes a struct dog
