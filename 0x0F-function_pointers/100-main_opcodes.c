@@ -34,9 +34,10 @@ int main(int argc, char *argv[])
 	{
 		if (1 == n - 1)
 		{
-			printf("", array[i]);
+			printf("%02hhx\n", array[i]);
 			break;
 		}
+		printf("%02hhx ", array[i]);
 	}
 	return (0);
 }
