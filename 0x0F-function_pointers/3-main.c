@@ -7,10 +7,10 @@
  * Return: 0
  */
 
-int main(int __attribute__((__unused__)) argc, char *argv[])
-	int n1, n2;
-
-	char *cal;
+int main(int argc, char *argv[])
+{
+	int n1, n2, ans;
+	int (*op_func)(int, int);
 
 	if (argc != 4)
 	{
@@ -19,20 +19,23 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	}
 
 	n1 = atoi(argv[1]);
-	cal = argv[2];
 	n2 = atoi(argv[3]);
+	op_func = get_op_func(argv[2]);
 
-	if (get_op_func(op) == NULL || op[1] != '\0')
+	if (op_func == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	if ((*cal == '/' && n2 == 0) || (*cal == '%' && n2 == 0))
+	if ((argv[2][0] == '/' || argv[2][0] == '%') && n2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
 
-	printf("%d\n", get_op_func(op)(n1, n2));
+	ans = op_func(n1, n2);
+	printf("%d\n", ans);
+
 	return (0);
+}
