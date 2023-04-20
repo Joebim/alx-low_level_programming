@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < n; i++)
 	{
-		if (1 == n - 1)
+		if (i == n - 1)
 		{
 			printf("%02hhx\n", array[i]);
 			break;
