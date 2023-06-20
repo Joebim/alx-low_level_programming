@@ -7,12 +7,13 @@
  * @age: the dog's age
  * @owner: the dog's owner's name
  */
-typedef struct dog
+
+struct dog
 {
-    char *name;
-    float age;
-    char *owner;
-} dog_t;
+	char *name;
+	float age;
+	char *owner;
+};
 
 /**
  * init_dog - Initializes a struct dog
@@ -28,14 +29,13 @@ typedef struct dog
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-    if (d != NULL)
-    {
-        d->name = malloc(strlen(name) + 1);
-        if (d->name != NULL)
-            strcpy(d->name, name);
-        d->age = age;
-        d->owner = malloc(strlen(owner) + 1);
-        if (d->owner != NULL)
-            strcpy(d->owner, owner);
-    }
+	struct dog dog;
+
+	d = &dog;
+
+	(*d).name = name;
+	(*d).age = age;
+	(*d).owner = owner;
+
+	return (0);
 }
