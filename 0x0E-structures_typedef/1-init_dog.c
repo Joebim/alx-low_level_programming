@@ -1,19 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
-
-/**
- * struct dog - a dog struct
- * @name: the dog's name
- * @age: the dog's age
- * @owner: the dog's owner's name
- */
-
-struct dog
-{
-	char *name;
-	float age;
-	char *owner;
-};
+#include "dog.h"
 
 /**
  * init_dog - Initializes a struct dog
@@ -29,13 +16,19 @@ struct dog
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
-	struct dog dog;
+	if (d == NULL)
+		return;
 
-	d = &dog;
+	d->name = strdup(name);
+	if (d->name == NULL)
+		return;
 
-	(*d).name = name;
-	(*d).age = age;
-	(*d).owner = owner;
+	d->age = age;
 
-	return (0);
+	d->owner = strdup(owner);
+	if (d->owner == NULL)
+	{
+		free(d->name);
+		return;
+	}
 }
